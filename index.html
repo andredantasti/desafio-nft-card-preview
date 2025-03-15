@@ -1,20 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NFT Preview Card Component</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="responsivo.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="responsivo.css" />
 
-    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
 
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <header class="cabecalho">
+        <img src="images/image-equilibrium.jpg" alt="Foto Equilibrium" class="img-equilibrium"/>
+      </header>
+      <section class="titulo-descricao">
+        <h1 class="titulo">Equilibrium #3429</h1>
+        <p class="descricao">
+          Our Equilibrium collection promotes baçance and calm.
+        </p>
 
-    
-    
-</body>
+        <div class="info">
+          <ul>
+            <li class="diamante">
+              <img src="images/icon-ethereum.svg" alt="Diamante" class="img-diamante"/> <span>0.041 ETH</span>
+            </li>
+            <li class="relogio">
+              <img src="images/icon-clock.svg" alt="Relógio" class="relogio"/> <span>3 days left</span>
+            </li>
+          </ul>
+        </div>
+        <div class="linha"><hr /></div>
+      </section>
+
+      <footer class="rodape">
+        <img src="images/image-avatar.png" alt="Foto Autor" />
+        <p><span>Creation Of</span> <a href="">Jules Wyvern</a></p>
+      </footer>
+    </main>
+  </body>
 </html>

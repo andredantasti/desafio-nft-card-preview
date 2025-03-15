@@ -1,0 +1,147 @@
+body{
+    background-color: #0d192c;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 350px;
+    height: 596px;
+    background-color: #15263f;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cabecalho{
+    background-color: #00FFF8;
+    width: 302px;
+    height: 302px;
+    border-radius: 15px;
+    display: flex;
+    margin: 24px;
+}
+
+.cabecalho img{
+    width: 302px;
+    height: 302px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.img-equilibrium:hover{
+    background-image: url("../images/icon-view.svg");
+    cursor: pointer;
+    opacity: 50.3%;
+    
+}
+
+.titulo-descricao h1{
+    margin: 0px 24px 16px 24px;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.titulo-descricao h1:hover{
+    color: #00FFF8;
+    cursor: pointer;
+}
+
+.descricao{
+    margin: 0px 24px 16px 24px;
+    color: #8bacd9;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+
+.titulo-descricao ul{
+    display: flex;
+    margin-left: 24px;
+    margin-bottom: 24px;
+}
+
+
+.titulo-descricao hr{
+    background-color: #8bacd9;
+    width: 302px;
+    height: 1px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+
+   }
+
+.info li{
+    display: flex;
+    flex-grow: 3;
+    font-size: 16px;
+   }
+
+.relogio{
+    margin-left: 5px;
+    color: #8bacd9;
+    display: flex;
+    align-items: center;
+}
+
+.diamante{
+    color: #00FFF8;
+    display: flex;
+    align-items: center;
+}
+
+.linha{
+    display: flex;
+    width: 350px;
+    justify-content: center;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+
+}
+
+.rodape img{
+    width: 33px;
+    border-radius: 50%;
+    border: 1px solid white;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.rodape span{
+    color: #8bacd9;
+}
+
+.img-diamante{
+    width: 11px;
+    height: 18px;
+}
+.relogio{
+    width: 16px;
+    height: 16px;
+}
+
+span{
+    margin-left: 5px;
+}
+
+a:hover{
+    color: #00FFF8;
+    cursor: pointer;
+}
