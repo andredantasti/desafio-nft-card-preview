@@ -27,7 +27,7 @@ Ver e explorar um Cartão de pré-visualização de NFT, com efeitos ao passar o
 
 ### Screenshot
 
-![](./images/animacaocard.gif)
+![](./images/animacao.gif)
 
 
 ### Links
