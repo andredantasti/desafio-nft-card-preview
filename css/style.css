@@ -1,147 +1,134 @@
 body{
-    background-color: #0d192c;
+    background-color: var(--neutral-dark);
     font-family: 'Outfit', sans-serif;
+}
+
+main{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 0 25px;
 }
 
-.container{
-    width: 350px;
-    height: 596px;
-    background-color: #15263f;
-    display: flex;
-    flex-direction: column;
+.nft-card{
+    max-width: 350px;
+    background-color: var(--neutral-medium);
     border-radius: 15px;
-    justify-content: center;
-    align-items: center;
-    
+    padding: 25px;
 }
 
-.cabecalho{
-    background-color: #00FFF8;
-    width: 302px;
-    height: 302px;
-    border-radius: 15px;
+.nft-card .image-link{
+    position: relative;
     display: flex;
-    margin: 24px;
 }
 
-.cabecalho img{
-    width: 302px;
-    height: 302px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    transition: 0.2s;
+.nft-card .image-link .image{
+    width: 100%;
+    border-radius: 7px;    
 }
 
-.img-equilibrium:hover{
-    background-image: url("../images/icon-view.svg");
-    cursor: pointer;
-    opacity: 50.3%;
-    
+.nft-card .image-link::before{    
+    content: '';
+    background-color: cyan;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
 }
 
-.titulo-descricao h1{
-    margin: 0px 24px 16px 24px;
-    color: white;
+.nft-card .image-link::after{
+    content: '';
+    background: url(../images/icon-view.svg) no-repeat center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.nft-card .image-link:hover::before {    
+    opacity: 0.4;
+}
+
+.nft-card .image-link:hover::after{
+    opacity: 1;
+}
+
+.nft-card .title-link .title{
     font-size: 22px;
-    font-weight: 500;
+    color: #ffffff;
+    margin: 25px 0 20px;
 }
 
-.titulo-descricao h1:hover{
-    color: #00FFF8;
-    cursor: pointer;
+.nft-card .title-link .title:hover{
+    color: var(--primary-medium);
 }
 
-.descricao{
-    margin: 0px 24px 16px 24px;
-    color: #8bacd9;
+.nft-card .about{
+    color: var(--primary-soft);
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 23px;
 }
 
-
-.titulo-descricao ul{
+.nft-card .info{
     display: flex;
-    margin-left: 24px;
-    margin-bottom: 24px;
+    justify-content: space-between;
+    margin-bottom: 23px;
 }
 
-
-.titulo-descricao hr{
-    background-color: #8bacd9;
-    width: 302px;
-    height: 1px;
-    border: none;
-    justify-content: center;
-    align-items: center;
-
-   }
-
-.info li{
+.nft-card .info .price{
+    color: var(--primary-medium);
     display: flex;
-    flex-grow: 3;
-    font-size: 16px;
-   }
-
-.relogio{
-    margin-left: 5px;
-    color: #8bacd9;
-    display: flex;
-    align-items: center;
 }
 
-.diamante{
-    color: #00FFF8;
-    display: flex;
-    align-items: center;
-}
-
-.linha{
-    display: flex;
-    width: 350px;
-    justify-content: center;
-}
-
-.rodape{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 300px;
-    margin-top: 16px;
-    margin-bottom: 32px;
-
-}
-
-.rodape img{
-    width: 33px;
-    border-radius: 50%;
-    border: 1px solid white;
-    text-align: left;
-    margin-right: 10px;
-}
-
-.rodape span{
-    color: #8bacd9;
-}
-
-.img-diamante{
+.nft-card .info .price::before{
+    content: '';
+    background: url(../images/icon-ethereum.svg) no-repeat center;
     width: 11px;
-    height: 18px;
-}
-.relogio{
-    width: 16px;
-    height: 16px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
 }
 
-span{
-    margin-left: 5px;
+.nft-card .info .days-left{
+    color: var(--primary-soft);
+    display: flex;
 }
 
-a:hover{
-    color: #00FFF8;
-    cursor: pointer;
+.nft-card .info .days-left::before{
+    content: '';
+    background: url(../images/icon-clock.svg) no-repeat center;
+    width: 15px;    
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.nft-card .creator{
+    display: flex;
+    align-items: center;   
+    border-top: 1px solid var(--neutral-soft); 
+    padding-top: 15px;
+}
+
+.nft-card .creator .avatar{
+    max-width: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.nft-card .creator .text{
+    color: var(--primary-soft);
+}
+
+.nft-card .creator .text .name{
+    color: #ffffff;
+}
+
+.nft-card .creator .text .name:hover{
+    color: var(--primary-medium);
 }
